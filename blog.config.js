@@ -28,16 +28,17 @@ const BLOG = {
   FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-serif', // ['font-serif','font-sans'] 两种可选，分别是衬线和无衬线: 参考 https://www.jianshu.com/p/55e410bd2115
   FONT_URL: [// 字体CSS 例如 https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
     'https://fonts.googleapis.com/css?family=Bitter&display=swap',
-    'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap',
-    'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap'
+    //'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap',
+    //'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap'
+    'https://npm.elemecdn.com/lxgw-wenkai-webfont@1.7.0/style.css'
   ],
   FONT_SANS: [// 无衬线字体 例如'LXGW WenKai'
-    'Bitter', '"PingFang SC"', '-apple-system', 'BlinkMacSystemFont', '"Hiragino Sans GB"',
+    'Bitter', '"LXGW WenKai"', '"PingFang SC"', '-apple-system', 'BlinkMacSystemFont', '"Hiragino Sans GB"',
     '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Segoe UI"', '"Noto Sans SC"', 'HarmonyOS_Regular',
     '"Microsoft YaHei"', '"Helvetica Neue"', 'Helvetica', '"Source Han Sans SC"',
     'Arial', 'sans-serif', '"Apple Color Emoji"'],
   FONT_SERIF: [// 衬线字体 例如'LXGW WenKai'
-    'Bitter', '"Noto Serif SC"', 'SimSun', '"Times New Roman"', 'Times', 'serif',
+    'Bitter', '"LXGW WenKai"', '"Noto Serif SC"', 'SimSun', '"Times New Roman"', 'Times', 'serif',
     '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Apple Color Emoji"'],
   FONT_AWESOME: '/css/all.min.css', // font-awesome 字体图标地址
 
@@ -59,9 +60,9 @@ const BLOG = {
   // PrismJs 代码相关
   PRISM_JS_AUTO_LOADER: 'https://npm.elemecdn.com/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js',
   PRISM_JS_PATH: 'https://npm.elemecdn.com/prismjs@1.29.0/components/',
-  PRISM_THEME_PATH: 'https://npm.elemecdn.com/prism-themes/themes/prism-a11y-dark.min.css', // 代码样式主题 更多参考 https://github.com/PrismJS/prism-themes
+  PRISM_THEME_PATH: 'https://npm.elemecdn.com/prism-themes/themes/prism-material-light.min.css', // 代码样式主题 更多参考 https://github.com/PrismJS/prism-themes
   CODE_MAC_BAR: true, // 代码左上角显示mac的红黄绿图标
-  CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || 'false', // 是否显示行号
+  CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || 'true', // 是否显示行号
 
   BACKGROUND_LIGHT: '#eeeeee', // use hex value, don't forget '#' e.g #fffefc
   BACKGROUND_DARK: '#000000', // use hex value, don't forget '#'
